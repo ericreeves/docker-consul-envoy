@@ -1,9 +1,9 @@
 ARG ENVOY_VERSION
 ARG CONSUL_VERSION
 
-FROM envoyproxy/envoy:v${ENVOY_VERSION} as envoy-bin
+FROM envoyproxy/envoy:v1.23.1 as envoy-bin
 
-FROM hashicorp/consul-enterprise:${CONSUL_VERSION} as consul-bin
+FROM hashicorp/consul-enterprise:1.13.1-ent as consul-bin
 
 FROM ubuntu 
 
